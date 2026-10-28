@@ -1,0 +1,72 @@
+{
+  "internal": {
+    "split": "internal",
+    "accuracy": 0.7794117647058824,
+    "balanced_accuracy": 0.7215397215397216,
+    "precision_macro": 0.7215397215397216,
+    "recall_macro": 0.7215397215397216,
+    "f1_macro": 0.7215397215397216,
+    "classification_report": {
+      "Bad": {
+        "precision": 0.5945945945945946,
+        "recall": 0.5945945945945946,
+        "f1-score": 0.5945945945945946,
+        "support": 37.0
+      },
+      "Good": {
+        "precision": 0.8484848484848485,
+        "recall": 0.8484848484848485,
+        "f1-score": 0.8484848484848485,
+        "support": 99.0
+      },
+      "accuracy": 0.7794117647058824,
+      "macro avg": {
+        "precision": 0.7215397215397216,
+        "recall": 0.7215397215397216,
+        "f1-score": 0.7215397215397216,
+        "support": 136.0
+      },
+      "weighted avg": {
+        "precision": 0.7794117647058824,
+        "recall": 0.7794117647058824,
+        "f1-score": 0.7794117647058824,
+        "support": 136.0
+      }
+    }
+  },
+  "external": {
+    "split": "external",
+    "accuracy": 0.6985294117647058,
+    "balanced_accuracy": 0.665984165984166,
+    "precision_macro": 0.6439393939393939,
+    "recall_macro": 0.665984165984166,
+    "f1_macro": 0.6491978609625668,
+    "classification_report": {
+      "Bad": {
+        "precision": 0.4583333333333333,
+        "recall": 0.5945945945945946,
+        "f1-score": 0.5176470588235295,
+        "support": 37.0
+      },
+      "Good": {
+        "precision": 0.8295454545454546,
+        "recall": 0.7373737373737373,
+        "f1-score": 0.7807486631016043,
+        "support": 99.0
+      },
+      "accuracy": 0.6985294117647058,
+      "macro avg": {
+        "precision": 0.6439393939393939,
+        "recall": 0.665984165984166,
+        "f1-score": 0.6491978609625668,
+        "support": 136.0
+      },
+      "weighted avg": {
+        "precision": 0.7285539215686274,
+        "recall": 0.6985294117647058,
+        "f1-score": 0.7091695501730104,
+        "support": 136.0
+      }
+    }
+  }
+}

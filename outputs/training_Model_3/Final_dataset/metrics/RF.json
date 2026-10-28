@@ -1,0 +1,72 @@
+{
+  "internal": {
+    "split": "internal",
+    "accuracy": 0.7867647058823529,
+    "balanced_accuracy": 0.7181272181272181,
+    "precision_macro": 0.7303921568627452,
+    "recall_macro": 0.7181272181272181,
+    "f1_macro": 0.7236353444047369,
+    "classification_report": {
+      "Bad": {
+        "precision": 0.6176470588235294,
+        "recall": 0.5675675675675675,
+        "f1-score": 0.5915492957746479,
+        "support": 37.0
+      },
+      "Good": {
+        "precision": 0.8431372549019608,
+        "recall": 0.8686868686868687,
+        "f1-score": 0.8557213930348259,
+        "support": 99.0
+      },
+      "accuracy": 0.7867647058823529,
+      "macro avg": {
+        "precision": 0.7303921568627452,
+        "recall": 0.7181272181272181,
+        "f1-score": 0.7236353444047369,
+        "support": 136.0
+      },
+      "weighted avg": {
+        "precision": 0.7817906574394464,
+        "recall": 0.7867647058823529,
+        "f1-score": 0.7838510430449245,
+        "support": 136.0
+      }
+    }
+  },
+  "external": {
+    "split": "external",
+    "accuracy": 0.6985294117647058,
+    "balanced_accuracy": 0.6575211575211575,
+    "precision_macro": 0.6393719806763285,
+    "recall_macro": 0.6575211575211575,
+    "f1_macro": 0.6445464397271625,
+    "classification_report": {
+      "Bad": {
+        "precision": 0.45652173913043476,
+        "recall": 0.5675675675675675,
+        "f1-score": 0.5060240963855421,
+        "support": 37.0
+      },
+      "Good": {
+        "precision": 0.8222222222222222,
+        "recall": 0.7474747474747475,
+        "f1-score": 0.783068783068783,
+        "support": 99.0
+      },
+      "accuracy": 0.6985294117647058,
+      "macro avg": {
+        "precision": 0.6393719806763285,
+        "recall": 0.6575211575211575,
+        "f1-score": 0.6445464397271625,
+        "support": 136.0
+      },
+      "weighted avg": {
+        "precision": 0.7227301790281329,
+        "recall": 0.6985294117647058,
+        "f1-score": 0.707696331544666,
+        "support": 136.0
+      }
+    }
+  }
+}
