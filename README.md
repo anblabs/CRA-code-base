@@ -76,13 +76,15 @@ flowchart LR
 > **Conserved biological response states organize nanoparticle biosafety across neurological systems**
 
 ### Authors
-Sri Renukadevi Balusamy$^{1\#}$, Davoodbasha Mubarak Ali$^{2,3\#}$, Irfan Ullah$^{4}$, Girish Birappa$^{5}$, Samad Abdus$^{6}$, Priyanka Singh$^{7}$, Shadi Rahimi$^{8}$, Sumit Kumar$^{9}$, Mamata Karmacharya$^{9}$, Yeon Ju Kim$^{6}$, Suresh Ramakrishna$^{5,10}$, Ivan Mijakovic$^{8,11}$, Seungae Lee$^{12}$, Haribalan Perumalsamy$^{13,14\#*}$
+**Sri Renukadevi Balusamy**<sup>1,#</sup>, **Davoodbasha Mubarak Ali**<sup>2,3,#</sup>, **Irfan Ullah**<sup>4</sup>, **Girish Birappa**<sup>5</sup>, **Samad Abdus**<sup>6</sup>, **Priyanka Singh**<sup>7</sup>, **Shadi Rahimi**<sup>8</sup>, **Sumit Kumar**<sup>9,*</sup>, **Mamata Karmacharya**<sup>9</sup>, **Yeon Ju Kim**<sup>6</sup>, **Suresh Ramakrishna**<sup>5,10</sup>, **Ivan Mijakovic**<sup>8,11</sup>, **Seungae Lee**<sup>12,*</sup>, **Haribalan Perumalsamy**<sup>13,14,#,*</sup>
 
-$^\#$*These authors contributed equally*  
-$^*$**Corresponding authors:**
-* Haribalan Perumalsamy ([harijai2004@hanyang.ac.kr](mailto:harijai2004@hanyang.ac.kr))
-* Sumit Kumar ([sumitwithchem@gmail.com](mailto:sumitwithchem@gmail.com))
-* Seungah Lee ([moon11311@naver.com](mailto:moon11311@naver.com))
+<p>
+  <sup>#</sup> <em>These authors contributed equally</em><br>
+  <sup>*</sup> <strong>Corresponding authors:</strong> 
+  <a href="mailto:harijai2004@hanyang.ac.kr">Haribalan Perumalsamy</a>, 
+  <a href="mailto:sumitwithchem@gmail.com">Sumit Kumar</a>, 
+  <a href="mailto:moon11311@naver.com">Seungah Lee</a>
+</p>
 
 ### Affiliations
 1. Department of Food Science and Biotechnology, Sejong University, Seoul, Republic of Korea
