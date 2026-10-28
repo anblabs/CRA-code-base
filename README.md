@@ -1,6 +1,5 @@
 <div align="center">
 
-# NeuroSafeNet
 ### Conserved Biological Response States Organize Nanoparticle Biosafety Across Neurological Systems
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/downloads/)
