@@ -75,7 +75,7 @@ flowchart LR
 > **Conserved biological response states organize nanoparticle biosafety across neurological systems**
 
 ### Authors
-**Sri Renukadevi Balusamy**<sup>1,#</sup>, **Davoodbasha Mubarak Ali**<sup>2,3,#</sup>, **Irfan Ullah**<sup>4</sup>, **Girish Birappa**<sup>5</sup>, **Samad Abdus**<sup>6</sup>, **Priyanka Singh**<sup>7</sup>, **Shadi Rahimi**<sup>8</sup>,*</sup>, **Mamata Karmacharya**<sup>9</sup>, **Yeon Ju Kim**<sup>6</sup>, **Suresh Ramakrishna**<sup>5,10</sup>, **Ivan Mijakovic**<sup>8,11</sup>, **Seungae Lee**<sup>12,*</sup>,**Sumit Kumar**<sup>9*,
+**Sri Renukadevi Balusamy**<sup>1,#</sup>, **Davoodbasha Mubarak Ali**<sup>2,3,#</sup>, **Irfan Ullah**<sup>4</sup>, **Girish Birappa**<sup>5</sup>, **Samad Abdus**<sup>6</sup>, **Priyanka Singh**<sup>7</sup>, **Shadi Rahimi**<sup>8</sup>,*</sup>, **Mamata Karmacharya**<sup>9</sup>, **Yeon Ju Kim**<sup>6</sup>, **Suresh Ramakrishna**<sup>5,10</sup>, **Ivan Mijakovic**<sup>8,11</sup>, **Seungae Lee**<sup>12,*</sup>,**Sumit Kumar**<sup>9*</sup>,
 **Haribalan Perumalsamy**<sup>13,14,#,*</sup>
 
 <p>
