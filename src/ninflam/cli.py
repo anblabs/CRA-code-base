@@ -10,8 +10,19 @@ from ninflam.pre_pipeline import NInflamPipeline
 
 
 def load_config(config_dir: Optional[Path] = None):
-    root = Path(__file__).resolve().parents[2]
-    config_dir = config_dir or root / "configs"
+    if config_dir is None:
+        candidates = [
+            Path(__file__).resolve().parents[2] / "configs",
+            Path("configs"),
+            Path("../code/configs"),
+            Path("/code/configs"),
+        ]
+        for cand in candidates:
+            if cand.exists():
+                config_dir = cand
+                break
+        if config_dir is None:
+            config_dir = Path(__file__).resolve().parents[2] / "configs"
 
     cfg = OmegaConf.load(config_dir / "config.yaml")
     cfg.data = OmegaConf.load(config_dir / "data" / "data.yaml")

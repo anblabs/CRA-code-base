@@ -13,11 +13,29 @@ class ExcelLoader(BaseLoader):
         self.sheet = sheet
 
     def load(self) -> pd.DataFrame:
-        from pathlib import Path
+        # Search candidate directories in priority order:
+        # 1. Code Ocean standard: ../data/<file>
+        # 2. Code Ocean absolute: /data/<file>
+        # 3. Local workspace Data dirs
+        candidates = [
+            Path("../data"),
+            Path("/data"),
+            Path(__file__).resolve().parents[3] / "Data",
+            Path(__file__).resolve().parents[3] / "data",
+            Path("Data"),
+            Path("data"),
+        ]
 
-        ROOT = Path(__file__).resolve().parents[3]
-        data_root = ROOT / "Data"
-        path = data_root / self.file_name
+        path = None
+        for cand in candidates:
+            p = cand / self.file_name
+            if p.exists():
+                path = p
+                break
+
+        if path is None:
+            ROOT = Path(__file__).resolve().parents[3]
+            path = ROOT / "Data" / self.file_name
 
         log.info("Loading Excel: %s (sheet=%s)", path, self.sheet)
         return pd.read_excel(path, sheet_name=self.sheet)

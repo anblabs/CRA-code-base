@@ -34,7 +34,15 @@ class NInflamPipeline:
         self.io_cfg = IOCfg(**OmegaConf.to_container(cfg.io, resolve=True))
 
         self.base = Path(self.data_cfg.file_name).stem
-        self.outdir = Path(self.io_cfg.outputs_dirname) / f"preprocessed_{self.io_cfg.outdir_tag}" / self.base
+        # Check if running in Code Ocean environment (where ../results or /results exists)
+        if Path("../results").exists():
+            out_root = Path("../results")
+        elif Path("/results").exists():
+            out_root = Path("/results")
+        else:
+            out_root = Path(self.io_cfg.outputs_dirname)
+
+        self.outdir = out_root / f"preprocessed_{self.io_cfg.outdir_tag}" / self.base
         self.art = ArtifactManager(str(self.outdir))
 
     def run(self) -> None:

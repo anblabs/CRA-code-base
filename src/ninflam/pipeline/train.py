@@ -100,13 +100,21 @@ def run_training_pipeline(cfg: DictConfig) -> None:
 
 def _resolve_paths(cfg: DictConfig) -> dict:
     base = Path(str(cfg.data.file_name)).stem
+    # Check if running in Code Ocean environment (where ../results or /results exists)
+    if Path("../results").exists():
+        out_root = Path("../results")
+    elif Path("/results").exists():
+        out_root = Path("/results")
+    else:
+        out_root = Path(str(cfg.io.outputs_dirname))
+
     preprocessed_dir = (
-        Path(str(cfg.io.outputs_dirname))
+        out_root
         / f"preprocessed_{cfg.io.outdir_tag}"
         / base
     )
     training_dir = (
-        Path(str(cfg.io.outputs_dirname))
+        out_root
         / f"training_{cfg.io.outdir_tag}"
         / base
     )

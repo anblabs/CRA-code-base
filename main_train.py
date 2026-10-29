@@ -73,6 +73,15 @@ if __name__ == "__main__":
 
             results_list.append(row)
 
+        df_summary = pd.DataFrame(results_list)
+        df_summary.to_csv(training_dir / "metrics_summary.csv", index=False)
+
+        # In Code Ocean, also export directly to root results directory
+        if Path("../results").exists():
+            df_summary.to_csv(Path("../results") / "metrics_summary.csv", index=False)
+        elif Path("/results").exists():
+            df_summary.to_csv(Path("/results") / "metrics_summary.csv", index=False)
+
         print("\n" + "=" * 132)
         print("                                     ALL MODEL EVALUATION & BENCHMARK METRICS")
         print("=" * 132)
