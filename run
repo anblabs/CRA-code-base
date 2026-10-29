@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -e
+
+echo "=========================================================================="
+echo " NeuroSafeNet — Code Ocean Reproducible Pipeline"
+echo " Conserved biological response states organize nanoparticle biosafety"
+echo "=========================================================================="
+
+# Ensure results folder exists
+mkdir -p ../results 2>/dev/null || true
+
+echo ""
+echo "[Step 1/2] Running Preprocessing Pipeline (Data Cleaning & Splitting)..."
+python main_preprocess.py
+
+echo ""
+echo "[Step 2/2] Running Model Training & 10-Fold Cross-Validation..."
+python main_train.py
+
+# Ensure all outputs are synced to ../results for Code Ocean
+if [ -d "../results" ]; then
+    echo ""
+    echo "Exporting final evaluation summaries to ../results/ ..."
+    cp -r outputs/* ../results/ 2>/dev/null || true
+fi
+
+echo ""
+echo "=========================================================================="
+echo " Pipeline execution completed successfully! All results saved to ../results"
+echo "=========================================================================="
+
